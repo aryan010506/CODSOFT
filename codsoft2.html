@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aryan Sunil | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #111;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #007BFF;
+    }
+
+    section {
+      padding: 60px 50px;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+    }
+
+    .hero-text {
+      flex: 1;
+      padding-right: 30px;
+    }
+
+    .hero-text h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text span {
+      color: orange;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+
+    .btn {
+      background: #1500ff;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 30px;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .hero-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-img img {
+      width: 280px;
+      height: auto;
+      border-radius: 50%;
+      background: orange;
+      padding: 10px;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      font-size: 24px;
+      margin-right: 15px;
+      color: #000;
+      text-decoration: none;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    #about p,
+    #skills p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    #skills {
+      background: #fff;
+    }
+
+    #contact a.btn {
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      color: #666;
+      font-size: 14px;
+      margin-top: 30px;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        padding: 0;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><i class="fas fa-code"></i> Aryan</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Hello, I'm <span>Aryan Sunil</span></h2>
+      <p>Front-End Web Developer</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/aryan-sunil-363333314/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/aryan010506" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+     <a href="#about" class="btn">About Me <i class="fas fa-arrow-down"></i></a>
+    </div>
+    <div class="hero-img">
+      <img src="file:///C:/Users/Sunil/Downloads/aryan.jpg" alt="Aryan Avatar" />
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a second-year Data Science student with strong skills in website development and coding.
+      Passionate about technology and data-driven solutions, I enjoy building functional and visually appealing websites
+      while continuously improving my programming expertise.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>
+      Analytics, Data Science, Sensors, Detailed Design, Front-End Development, Poster Design, Self-assembly,
+      Adobe Premiere Pro, Creativity and Innovation, GitHub, Web Technologies, Web Hosting, Microsoft Office, CAP,
+      Hypertext Transfer Protocol (HTTP), Cascading Style Sheets (CSS), Excel Formulas, Excel Pivot, Front-End Design,
+      Learn New Software Quickly, English, Communication, Notepad
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:aryan010506@gmail.com">aryan010506@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919082342749">9082342749</a></p>
+    <a href="file:///C:/Users/Sunil/Downloads/Aryan%E2%80%99s%20Resume.pdf" download class="btn"><i class="fas fa-download"></i> Download Resume</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Aryan Sunil. All rights reserved.
+  </footer>
+
+</body>
+</html>
