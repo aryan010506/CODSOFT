@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CODSOFT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #f4f7f8;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 28px;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #fdd835;
+    }
+    .hero {
+      background: linear-gradient(to right, #ee0979, #ff6a00);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      border-bottom: 5px solid #fdd835;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 20px;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+    .hero .buttons button {
+      margin: 10px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .hero .buttons .primary {
+      background: #fdd835;
+      color: #333;
+    }
+    .hero .buttons .secondary {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+    .hero .buttons button:hover {
+      transform: scale(1.1);
+    }
+    .features-bar {
+      background: #ffffff;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    .feature {
+      flex: 1;
+      min-width: 250px;
+      margin: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .feature:hover {
+      transform: scale(1.05);
+    }
+    .feature h3 {
+      color: #ee0979;
+      margin-bottom: 10px;
+    }
+    .about {
+      background: #fff;
+      padding: 60px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      animation: slideIn 1s ease-in-out;
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    .about-text {
+      max-width: 800px;
+      margin: 20px;
+    }
+    .about-text h2 {
+      color: #ff6a00;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .about-text p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+    }
+    .about-text button {
+      margin-top: 20px;
+      padding: 10px 25px;
+      background-color: #ee0979;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .about-text button:hover {
+      background-color: #d00868;
+      transform: scale(1.1);
+    }
+    .services {
+      padding: 60px 20px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    .services h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .service-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .service-item {
+      background: linear-gradient(to top, #fff, #f0f0f0);
+      padding: 30px;
+      border-radius: 16px;
+      width: 280px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .service-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    }
+    .service-item h3 {
+      color: #ee0979;
+      margin-bottom: 10px;
+    }
+    .service-item p {
+      color: #666;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CODSOFT</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Testimonials</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to CODSOFT</h2>
+    <p>A vibrant and diverse community that brings together individuals with similar objectives and ultimate goals. Our main focus is on creating opportunities that span various areas, including leadership development, learning, student engagement, and fostering shared interests.</p>
+    <div class="buttons">
+      <button class="primary">Join Now</button>
+      <button class="secondary">Explore More</button>
+    </div>
+  </section>
+
+  <section class="features-bar">
+    <div class="feature">
+      <h3>Leadership Development</h3>
+      <p>We believe in the power of leadership and its ability to drive positive change.</p>
+    </div>
+    <div class="feature">
+      <h3>Learning & Mentorship</h3>
+      <p>We provide platforms and resources for skill development through mentorship and learning programs.</p>
+    </div>
+    <div class="feature">
+      <h3>Community Engagement</h3>
+      <p>Fostering student engagement and collaboration through projects and shared interests.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-text">
+      <h2>About CODSOFT</h2>
+      <p>We empower individuals to take on leadership roles and make a difference in their respective fields. Through mentorship programs, workshops, and collaborative projects, CODSOFT supports its members in their growth journey by encouraging creativity, innovation, and community spirit.</p>
+      <button>Discover Our Story</button>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <h3>Leadership Training</h3>
+        <p>Programs designed to nurture leadership qualities and personal growth.</p>
+      </div>
+      <div class="service-item">
+        <h3>Collaborative Projects</h3>
+        <p>Engage in team-based challenges to build experience and skills.</p>
+      </div>
+      <div class="service-item">
+        <h3>Mentorship Programs</h3>
+        <p>Connect with experienced mentors to guide your career path.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CODSOFT. All rights reserved.</p>
+  </footer>
+</body>
+</html>
